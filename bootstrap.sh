@@ -1,6 +1,10 @@
 #!/bin/bash
 #updating and installing basic software
 sudo apt-get update
+# sometimes you'll need to run this twice with this AMI
+sudo apt-get update
+
+sudo apt-get install -y apache2-bin
 sudo apt-get install -y apache2
 
 echo "hi"
